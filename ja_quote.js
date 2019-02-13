@@ -1,3 +1,5 @@
+"use strict";
+
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 9
@@ -13,6 +15,16 @@
 
 */
 
+// Creates a randomQ variable, setting the random value generated from the randomInt function. 
+var randomQ = randomInt();
+
+// Displays a random quote from a list of 10, based on the randomly generated number in "randomQ". 
+document.getElementById("quote").innerHTML = getQuote(randomQ);
+
+// Generates a random integer. Uses the "lowest" and "size" parameter. 
+function randomInt(lowest, size) {
+    return Math.floor(Math.random() * 10);
+}
 
 function getQuote(n) {
     var quotes = [
