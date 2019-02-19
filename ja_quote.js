@@ -12,7 +12,6 @@
    This script randomly generates a Jane Austen quote from
    a list of 10 quotes and writes that quote into the first
    quotation tag in the Web page.
-
 */
 
 // Creates a randomQ variable, setting the random value generated from the randomInt function. 
